@@ -1,0 +1,132 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+  <title>Contador de Visitas Local</title>
+        <title>Cbt</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            body {
+      font-family: Arial, sans-serif;
+      
+      padding-top: 50px;
+    }
+    .contador {
+     
+      
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+             .contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+        .normal {
+            flex-direction: row;
+        }
+        .invertido {
+            flex-direction: row-reverse;
+        }
+        .imagen {
+            width: 45%;
+        }
+        
+        .texto {
+            width: 100%;
+            padding: 15px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: 50%;
+        }
+        </style>
+    </head>
+    <body>
+        <header style="
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11b8ed; ">
+  <div class="img">
+    <img src="logo.jpg" width="20%" height="20%"></div>
+  <nav>
+    <a href="Cbt.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">CBT</a>
+    <a href="carreras.html" style="margin: 0 10px; text-decoration: none; color: #c811ed">carreras</a>
+    <a href="historia.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">historia</a>
+    <a href="salones.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">salones</a>
+    <a href="eventos.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">eventos</a>
+    <br>
+    <br>
+    <a href="ubicacion.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">ubicacion</a>
+  </nav>
+</header>
+        <main>
+            <div style="background-color: #FFE5B4;">
+                <br>
+                <div class="contador">
+    visitas: <span id="visitas">0</span>
+  </div>
+
+  <script>
+    // Obtener visitas actuales desde localStorage
+    let visitas = localStorage.getItem('visitas');
+
+    // Si no hay visitas, iniciarlas en 0
+    if (!visitas) {
+      visitas = 0;
+    }
+
+    // Convertir a número y sumar 1
+    visitas = parseInt(visitas) + 1;
+
+    // Guardar nuevamente
+    localStorage.setItem('visitas', visitas);
+
+    // Mostrar en pantalla
+    document.getElementById('visitas').textContent = visitas;
+  </script>
+
+                <font size="4"><p style="color: #c811ed;"><i>El CBT Isaac Newton opera como parte integral del sistema de educación pública supervisado por la Secretaría de Educación, Ciencia, Tecnología e Innovación del Estado de México.<br>
+                                                               Esta afiliación garantiza que la institución cumpla con las políticas y estándares educativos establecidos a nivel estatal.<br>
+                                                               El CBT Isaac Newton en Melchor Ocampo se identifica como un Centro de Bachillerato Tecnológico, una institución fundamental en el sistema educativo del Estado de México.<br>
+                                                               Su función principal es ofrecer una formación integral de educación media superior técnica, preparando a los jóvenes tanto para su inserción en la vida productiva como para el acceso a estudios universitarios.<br>
+                                                               Esta dualidad es un pilar del modelo CBT, que busca dotar a los estudiantes de habilidades técnicas especializadas y una base académica sólida, adaptándose a las demandas del mercado laboral regional.</i></p></font>
+                
+                <div class="img">
+                    <center><img src="profe.jpg" height="100%" width="50%"/></center>
+                </div>
+                <br>
+                </div>                                              
+        </main>
+           <footer style="
+  background-color: #11b8ed;
+  color: #c811ed;
+  padding: 40px 0;
+  text-align: center;
+">
+        <div style="margin-bottom: 20px;">
+    <a href="https://www.facebook.com/CBTIsaacNewton/" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/cbt_isaacnewton" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://mx.linkedin.com/in/dulce-huerta-carrera-19a77062" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="55 7577 7668" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-phone"></i>
+    </a>
+  </div>
+  
+  <p>© 2025 CBTIsaacNewton.</p>
+  <p style="margin-top: 10px; font-size: 14px;">
+    <a href="#" style="color: #c811ed; margin: 0 8px; text-decoration: none;">Política de Privacidad</a> | 
+    <a href="#" style="color: #c811ed; margin: 0 8px; text-decoration: none;">Términos de Uso</a>
+  </p>
+</footer>
+    </body>
+</html>

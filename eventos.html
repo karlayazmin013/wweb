@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>eventos</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+             .contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+        .normal {
+            flex-direction: row;
+        }
+        .invertido {
+            flex-direction: row-reverse;
+        }
+        .imagen {
+            width: 45%;
+        }
+        
+        .texto {
+            width: 100%;
+            padding: 15px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <header style="
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11b8ed; ">
+  <div class="img">
+    <img src="logo.jpg" width="1%" height="2%">
+</div>
+  <nav>
+    <a href="Cbt.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">CBT</a>
+    <a href="carreras.html" style="margin: 0 10px; text-decoration: none; color: #c811ed">carreras</a>
+    <a href="historia.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">historia</a>
+    <a href="salones.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">salones</a>
+    <a href="eventos.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">eventos</a>
+    <a href="ubicacion.html" style="margin: 0 10px; text-decoration: none; color: #c811ed;">ubicacion</a>
+  </nav>
+</header>
+        <main>
+            <div style="background-color: #FFE5B4;">
+                <br>
+                <h1 style="color: #c811ed;"><i><strong>Viajes</strong></i></h1>
+                <p style="color: #c811ed;"><i>Estos viajes se realizan ya que para la titulación como técico es necesario tener un "documento" al cuál se le llama prácticas de observación,<br>
+                                                lso viajes o visitas, se llevan a cabo en una empresa en donde se hace un recorrido didactico y con explicaciones sobre el como se realizan las cosas.</i></p>
+                                                <div class="imagen">
+                                                    <center><img src="visita.jpg" height="100%" width="50%"></center>
+                                                </div>
+                                                <h1 style="color: #c811ed;"><i><strong>Premios</strong></i></h1>
+                                                <p style="color: #c811ed;"><i>Son parte de preimos asignados por la institucción por si algun grupo o alumnos gana cierto puesto en alguna competencia<br>
+                                                                                en donde se le llevan a los alumnos a alguna función en el cine o premios físicos otorgados por la institución</i></p>
+                                                                                <div class="imagen">
+                                                                                    <center><img src="cine.jpg" height="100%" width="50%"></center>
+                                                                                </div>
+                                                                                <h1 style="color: #c811ed;"><i><strong>Día de Muertos</strong></i></h1>
+                                                                                <p style="color: #c811ed;"><i>Los alumnos y sevidores de la institución participan en un desfile, en donde los alumnos
+                                                                                                                se disfrazan y recrean utileria de distintas tematicas a corde la fecha y en el auditorio
+                                                                                                                 que se encuentra en el centro de Melchor Ocampo</i></p>
+                                                                                                                 <div class="imagen">
+                                                                                                                    <center><img src="desfile aunucio.jpg" height="100%" width="100%"></center>
+                                                                                                                 </div>
+                                                                                                                 <h1 style="color: #c811ed;"><i><strong>25 de Noviembre</strong></i></h1>
+                                                                                                                 <p style="color: #c811ed;"><i>El día Naranja en donde la institución, o las mujeres del plantel participan en marchas y en palaticas sobre<br>
+                                                                                                                                              La violencia hacia la mujer, al final de todo, regresan al plantel para ser recibidas con una banda llamada<br>
+                                                                                                                                              Mr.Clon </i></p>
+                                                                                                                                              <div class="imagen">
+                                                                                                                                                <center><img src="platica.jpg"></center>
+                                                                                                                                              </div>
+                                                                                                                                              <h1 style="color: #c811ed;"><i><strong>14 de Febrero</strong></i></h1>
+                                                                                                                                              <p style="color: #c811ed;"><i>La institución realiza un evento a partir del día del Amor y la Amistad diversas actividades<br>
+                                                                                                                                                                               y asi los alumnos pueden participar y pasarla bien con sus amigos, pareja o ambos</i></p>
+                                                                                                                                                                               <div class="imagen">
+                                                                                                                                                                                <center><img src="14 febreroi.jpg" height="100%" width="50%"></center>
+                                                                                                                                                                               </div>   
+                                                                                                                                                                               <h1 style="color: #c811ed;"><i><strong>Competiciones</strong></i></h1>
+                                                                                                                                                                               <p style="color: #c811ed;"><i>La escuela tiene tres equipos, de futbol, voleibol y basquetbol, estos de ves en cuando participan en competiciones<br>
+                                                                                                                                                                                                               en contra de otras escuelas</i></p>
+                                                                                                                                                                                                               <div class="imagen">
+                                                                                                                                                                                                                <center><img src="basquet.jpg" height="100%" width="20%"></center>
+                                                                                                                                                                                                               </div>
+                                                                                                                                                                                                               <br>
+                                                                                                                                                                                                               <br>
+                  <div class="slider-container">
+        <!-- Botones de navegación -->
+        <button class="prev-btn" onclick="prevSlide()">←</button>
+        <button class="next-btn" onclick="nextSlide()">→</button>
+
+        <!-- Slides (videos/imágenes) -->
+        <div class="slide active">
+          <div class="video-container">
+            <video controls style="height: 800px; width: 800px;"
+                source src="baile.mp4" type="video/mp4"></video>
+          </div>  
+        </div>
+        <div class="slide video">
+            <video controls  style="height: 800px; width: 800px;"
+                source src="desfile.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slide">
+            <img src="desfile.jpg" height="100%" width="100%" alt="Imagen 1">
+        </div>
+        <div class="slide video">
+            <video controls  style="height: 700px; width: 800px;"
+                source src="kinder.mp4" type="video/mp4">
+            </video>
+          </div>
+        <div class="slide">
+          <img src="karim.jpg">
+        </div>
+         <div class="slide">
+          <img src="visita relax.jpg">
+        </div> 
+        <div class="slide">
+          <img src="nuevo.jpg">
+        </div>
+    <script src="script.js"></script>                                                                                                                                                                                                                                                                                    
+                <br>
+                </div>                                              
+        </main>
+           <footer style="
+  background-color: #11b8ed;
+  color: #c811ed;
+  padding: 40px 0;
+  text-align: center;
+">
+        <div style="margin-bottom: 20px;">
+    <a href="https://www.facebook.com/CBTIsaacNewton/" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/cbt_isaacnewton" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://mx.linkedin.com/in/dulce-huerta-carrera-19a77062" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="55 7577 7668" style="margin: 0 10px; color: #c811ed; font-size: 24px;">
+      <i class="fab fa-phone"></i>
+    </a>
+  </div>
+  
+  <p>© 2025 CBTIsaacNewton.</p>
+  <p style="margin-top: 10px; font-size: 14px;">
+    <a href="#" style="color: #c811ed; margin: 0 8px; text-decoration: none;">Política de Privacidad</a> | 
+    <a href="#" style="color: #c811ed; margin: 0 8px; text-decoration: none;">Términos de Uso</a>
+  </p>
+</footer>
+    </body>
+</html>
